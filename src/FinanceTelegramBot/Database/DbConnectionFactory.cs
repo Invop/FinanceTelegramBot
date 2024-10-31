@@ -1,5 +1,5 @@
 using System.Data;
-using System.Data.SQLite;
+using Microsoft.Data.Sqlite;
 
 namespace FinanceTelegramBot.Database;
 
@@ -18,7 +18,7 @@ public class SqliteConnectionFactory : IDbConnectionFactory
 
     public async Task<IDbConnection> CreateConnectionAsync(CancellationToken token = default)
     {
-        var connection = new SQLiteConnection(_connectionString);
+        var connection = new SqliteConnection(_connectionString);
         await connection.OpenAsync(token);
         return connection;
     }
