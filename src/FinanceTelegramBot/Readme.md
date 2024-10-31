@@ -36,7 +36,7 @@ The Telegram Finance Bot is a handy helper to manage your personal finances dire
 - **Manage Recurring Incomes**: `/recurring_income`
 
 ### Recurring Payments
-- **Manage Recurring Spents**: `/recurring_spent`
+- **Manage Recurring Payments**: `/recurring_payments`
 
 ### Data Analysis
 - **Analyze Expenditure**: `/analyze_expenditure`
