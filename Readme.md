@@ -2,14 +2,16 @@
 
 The Telegram Finance Bot is a powerful tool for managing your personal finances right from your Telegram chat. Easily create and organize categories, record transactions, set budgets, and analyze your spending patterns—all in one place. Simplify your financial tracking and stay on top of your budget with convenience and control.
 ## Features
-
-- **Category Management**: Create, Read, Update, and Delete categories.
-- **Post Management**: Create, Read, Update, and Delete posts within categories.
-- **Financial Data Management**: Manage budgets, incomes, recurring incomes, and deposits.
-- **Recurring Payments**: Manage recurring expenditures.
-- **Data Analysis**: Analyze spending and income over customizable time periods.
-- **Help and Summary**: Get command help and financial summaries.
-
+- **Category Management**: Create, read, update, and delete categories for your expenses and income.
+- **Transaction Management**: Record and manage transactions within different categories.
+- **Budget Management**: Set and manage budgets for different categories and track your financial goals.
+- **Income Management**: Track your incomes, including recurring incomes and deposits.
+- **Recurring Payments**: Manage and track recurring expenditures automatically.
+- **Financial Summaries**: Get detailed financial summaries and reports.
+- **Data Analysis**: Analyze your spending and income patterns over customizable time periods.
+- **User Assistance**: Access command help and usage instructions anytime.
+- **Notifications**: Receive notifications for due payments, budget limits, and financial summaries.
+- **Data Security**: Ensure your financial data is secure and private with encryption.
 ## Commands
 
 ### Category Management
@@ -18,11 +20,11 @@ The Telegram Finance Bot is a powerful tool for managing your personal finances 
 - **Update Category**: `/update_category`
 - **Delete Category**: `/delete_category`
 
-### Post Management
-- **Create Post**: `/create_post`
-- **Read Posts**: `/list_posts`
-- **Update Post**: `/update_post`
-- **Delete Post**: `/delete_post`
+### Transaction Management
+- **Create Transaction**: `/create_transaction`
+- **Read Transactions**: `/list_transactions`
+- **Update Transaction**: `/update_transaction`
+- **Delete Transaction**: `/delete_transaction`
 
 ### Financial Data Management
 - **Create Budget**: `/create_budget`
@@ -45,7 +47,6 @@ The Telegram Finance Bot is a powerful tool for managing your personal finances 
 ### Additional Features
 - **Help**: `/help`
 - **Summary**: `/summary`
-
 ## Getting Started
 
 To get started with the Telegram Finance Bot:
