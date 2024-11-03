@@ -1,13 +1,11 @@
+using FinanceTelegramBot.Domain.Services.Messaging;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
-using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.InlineQueryResults;
-using Telegram.Bot.Types.ReplyMarkups;
-using FinanceTelegramBot.Services.Messaging;
 
-namespace FinanceTelegramBot.Services;
+namespace FinanceTelegramBot.Domain.Services;
 
 public class UpdateHandler(ITelegramBotClient bot, MessageProcessor messageProcessor, ILogger<UpdateHandler> logger)
     : IUpdateHandler

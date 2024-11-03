@@ -1,7 +1,7 @@
-using Telegram.Bot;
 using FinanceTelegramBot.Abstract;
+using Telegram.Bot;
 
-namespace FinanceTelegramBot.Services;
+namespace FinanceTelegramBot.Domain.Services;
 
 // Compose Receiver and UpdateHandler implementation
 public class ReceiverService(

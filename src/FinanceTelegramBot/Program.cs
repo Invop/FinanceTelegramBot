@@ -1,9 +1,9 @@
 using Microsoft.Extensions.Options;
 using Telegram.Bot;
 using FinanceTelegramBot.Configuration;
-using FinanceTelegramBot.Database;
-using FinanceTelegramBot.Services;
-using FinanceTelegramBot.Services.Messaging;
+using FinanceTelegramBot.Data;
+using FinanceTelegramBot.Domain.Services;
+using FinanceTelegramBot.Domain.Services.Messaging;
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddSystemd();

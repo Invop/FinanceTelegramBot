@@ -1,6 +1,6 @@
 using Telegram.Bot.Types;
 
-namespace FinanceTelegramBot.Services.Messaging;
+namespace FinanceTelegramBot.Domain.Services.Messaging;
 
 public interface IMessageHandler
 {

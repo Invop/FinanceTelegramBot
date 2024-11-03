@@ -1,4 +1,4 @@
-namespace FinanceTelegramBot.Models;
+namespace FinanceTelegramBot.Domain.Models;
 
 public class Deposit
 {

@@ -1,24 +1,17 @@
 using System.Data;
 using Microsoft.Data.Sqlite;
 
-namespace FinanceTelegramBot.Database;
+namespace FinanceTelegramBot.Data;
 
 public interface IDbConnectionFactory
 {
     Task<IDbConnection> CreateConnectionAsync(CancellationToken token = default);
 }
-public class SqliteConnectionFactory : IDbConnectionFactory
+public class SqliteConnectionFactory(string connectionString) : IDbConnectionFactory
 {
-    private readonly string _connectionString;
-
-    public SqliteConnectionFactory(string connectionString)
-    {
-        _connectionString = connectionString;
-    }
-
     public async Task<IDbConnection> CreateConnectionAsync(CancellationToken token = default)
     {
-        var connection = new SqliteConnection(_connectionString);
+        var connection = new SqliteConnection(connectionString);
         await connection.OpenAsync(token);
         return connection;
     }

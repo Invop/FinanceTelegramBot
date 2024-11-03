@@ -1,14 +1,11 @@
+using FinanceTelegramBot.Data.Templates.Keyboard;
+using FinanceTelegramBot.Data.Templates.ResponseMessages;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
-using Telegram.Bot.Types.InlineQueryResults;
 using Telegram.Bot.Types.ReplyMarkups;
-using FinanceTelegramBot.Configuration;
-using FinanceTelegramBot.Data.Templates;
-using FinanceTelegramBot.Data.Templates.Keyboard;
-using FinanceTelegramBot.Data.Templates.ResponseMessages;
 
-namespace FinanceTelegramBot.Services.Messaging;
+namespace FinanceTelegramBot.Domain.Services.Messaging;
 
 public class MessageHandler(ITelegramBotClient bot, ILogger<UpdateHandler> logger) : IMessageHandler
 {
